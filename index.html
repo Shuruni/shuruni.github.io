@@ -18,47 +18,45 @@
       }
     </style>
   </head>
-  <body class="home">
-    <!-- //  INTRO  // -->
-    <div class="content-wrapper">
-      <div class="content-bg">
-        <header>
-          <!-- Start content edits below this line. -->
-          <h1>Alan Holman</h1>
-          <h2>Passionate about Japan and Tech</h2>
-
-          <!-- End content edits here. -->
-        </header>
-
-        <!-- //  ABOUT ME  // -->
-        <main>
-          <!-- Start content edits below this line. -->
-          <article id="bio">
-            <!-- <p>
-              Having been committed to learning and applying the latest technologies since childhood, I've had the opportunity to learn about and work with a wide range of different technologies over the years across the entire tech stack. From Java, C#, C++, Python, or Node for the Backend, to HTML, CSS, Typescript, React for the Frontend, to even Kubernetes, Ansible, Terraform, and the like for the Infra that holds it all together! I've always been a tinkerer and deep thinker with a need to learn the inner workings of everything. My motto is that it is better to learn how something works before it breaks than have to scramble to learn it once it is already broken!
-            </p> -->
-            <p>
-              I've always been a tinkerer and deep thinker with a need to learn the inner workings of everything. My motto is that it is better to learn how something works before it breaks than have to scramble to learn it once it is already broken!
-            </p>
-            <p>
-              I first came across tech on my own in middle school where I ended up using VBScript and C# to create some learning tools for my teachers. Heading into High School, I expanded my skill-set by working as a student IT support where I did cable runs and coded a utility for the offices to use for security camera view swapping and additionally worked to establish a computer science program at the high school of my own volition. In university I found myself right at home being able to study Python, Java, C++ and various other technologies. All the while I found myself researching and working on projects using what I had learned as well as applying the skills in Docker and React that I picked up during my summer internship. Even now I continue to explore and work on projects employing various technologies such as AI/ML(ASR->NLU->Traditional_API), React, Python, Kubernetes, Helm, Ansible, and more! 
-            </p>
-            <p>
-              I tend to spend my free time working on various personal development projects, and when I'm not, I can usually be found tinkering with my HomeLab, or Engaging with Japanese Media on YouTube or NicoNicoVideo(ニコニコ動画).
-            </p>
-          </article>
-          <p>To learn more about my work history, check out my <a href="/resume"> resume</a>. Thanks for stopping by!</p>
-
-          <!-- End content edits here. -->
-        </main>
+  <body class="info-page">
+    <header>
+      <div class="logo-wrapper">
+        <h1>Alan Holman</h1>
+        <h2>Passionate about Japan and Tech</h2>
       </div>
-    </div>
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
-      <!-- Start content edits below this line. -->
-      <p>© 2023 by Alan Holman | <span class="e-mail" data-user="nala" data-website="ved.inuruhs"></span></p>
+      <div class="navbar">
+        <a class="btn navlink" href="/">Home</a>
+        <a class="btn navlink" href="/resume">Resume</a>
+        <!-- <a class="btn navlink" href="/demos">Project Demos</a> -->
+      </div>
+    </header>
 
-      <!-- Add or remove any networks. -->
+    <main class="content-wrapper">
+      <section class="home-section">
+        <h2>About Me (自己紹介)</h2>
+        <article class="bio">
+          <p style="text-align: center;">
+            Hi there <span class="kaomoji">( ´ ▽ ` )ﾉ</span>, How's life?
+          </p>
+          <p>
+            Whether because you know me and I linked this site to you or by you discovered it by pure chance, it appears that you've wound up on this little site of mine eh? Welcome!
+          </p>
+          <h3>Background</h3>
+          <p>
+            I've been into tech since I was in Middle School where I taught myself VBScript and C# and created some learning tools for my teachers just for fun. Once I got to High School, I decided to take things a bit more seriously by working as a student IT support where I did cable runs and coded a utility for the offices to use for security camera view swapping. I also tried to get a computer science program started at the high school, though the plans ended up falling through so I had to continue learning on my own until I reached University. 
+          </p>
+          <p>
+            In University I found myself right at home being able to study Python, Java, C++ and a whole slew of useful fundamental concepts. All the while I found myself researching and working on projects using what I had learned as well as applying the skills in Docker and React that I picked up during my summer internship.
+          </p>
+          <p>
+            Nowadays, I tend to spend my free time working on various personal projects<!-- (See <a href="/demos">Project Demos</a>)-->, and when I'm not, I can usually be found tinkering with my HomeLab, or Relaxing while watching Japanese Media(ゲーム実況、TRPG配信、アニメ、などなど).
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 by Alan Holman | <span class="e-mail" data-user="nala" data-website="ved.inuruhs"></span></p>
       <ul class="socials">
         <li>
           <a href="https://www.linkedin.com/in/alan-holman" target="_blank"><img src="/images/icon-logo-linkedin.png" alt="My LinkedIn Profile" height="64" width="64"></a>
@@ -70,7 +68,6 @@
           </picture></a>
         </li>
       </ul>
-      <!-- End content edits here. -->
     </footer>
   </body>
 </html>

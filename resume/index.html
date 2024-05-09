@@ -18,71 +18,83 @@
       }
     </style>
   </head>
-  <body class="resume">
-    <!-- //  INTRO  // -->
+  <body class="info-page">
     <header>
-      <!-- Start content edits below this line. -->
-      <div class="content-wrapper">
+      <div class="logo-wrapper">
         <h1>Alan Holman</h1>
         <h2>Passionate about Japan and Tech</h2>
         <h3 class="print-only e-mail" data-user="nala" data-website="ved.inuruhs"></h3>
       </div>
-      <!-- End content edits here. -->
+      <div class="navbar">
+        <a class="btn navlink" href="/">Home</a>
+        <a class="btn navlink" href="/resume">Resume</a>
+        <!-- <a class="btn navlink" href="/demos">Project Demos</a> -->
+      </div>
     </header>
-    <button class="pdf-button-wrapper">
-      <a href="/pdf/resume_alan-holman.pdf" class="btn download-link">Download PDF</a>
-    </button>
-    <main class="content-wrapper">
+    <main class="content-wrapper resume-content">
+      <div class="pdf-button-wrapper">
+        <a href="/pdf/resume_alan-holman.pdf" class="btn download-link gr-ani-bg">Download PDF</a>
+      </div>
+      
       <!-- //  PROFILE  // -->
       <section class="resume-section">
-        <!-- Start content edits below this line. -->
         <h2>Profile</h2>
         <p>
           Having been committed to learning and applying the latest technologies since childhood, I've had the opportunity to work with a wide range of different technologies over the years across the entire tech stack. From <em>HTML</em>, <em>CSS</em>, <em>TypeScript</em>, <em>React</em> on the Frontend to
           <em>Java</em>, <em>C#</em>, <em>C++</em>, <em>Python</em>, or <em>Node</em> on the Backend, extending even to DevOps tech like <em>Kubernetes</em>, <em>Ansible</em>, <em>Terraform</em> and the like to tie it all together!
         </p>
-        <a class="btn" href="/">Back to homepage</a>
-
-        <!-- End content edits here. -->
       </section>
 
       <!-- //  PROJECTS  // -->
       <section class="resume-section">
-        <!-- Start content edits below this line. -->
         <h2>Projects</h2>
 
-        <!-- To add more items, copy this whole <section></section> block-->
         <div class="project-wrapper">
           <section class="project-item">
             <img src="/images/project-nabi-project-500px.jpg" srcset="/images/project-nabi-project-1000px.jpg 2x" alt="Various Nabi Project Application Screenshots" width="500" height="410">
-            <h3>Nabi Project</h3>
-            <p>A personal assistant <em>Progressive Web App (PWA)</em> featuring an anime style avatar. The application leverages <em>AI/ML</em> concepts such as <em>Natural Language Understanding(NLU)</em> for parsing user queries, and employs a customized speech model for TTS. Developed as a Personal Project using <em>React</em> w/ <em>MaterialUI</em> for the Frontend, <em>Node</em>, <em>Python</em>, and <em>Flask</em>, for the Backend, and <em>Docker</em>, <em>Bash</em>, <em>Helm</em>, <em>Kubernetes</em>, and <em>Nginx</em> for Building and Deployment.</p>
-            <!-- link to project -->
-            <!-- <a href="/nabi-project" target="_blank">Check it Out!</a> -->
-            <a class="btn" href="https://github.com/Nabi-Project/Nabi-Project" target="_blank">See on GitHub</a>
+            <article class="project-contents">
+              <h3>Nabi Project</h3>
+              <p>A personal assistant <em>Progressive Web App (PWA)</em>. The application leverages <em>AI/ML</em> concepts in <em>Natural Language Understanding(NLU)</em> for parsing user queries, as well as TTS. Developed as a Personal Project using <em>React</em> w/ <em>MaterialUI</em> for the Frontend, <em>Node</em>, <em>Python</em>, and <em>Flask</em>, for the Backend, and <em>Jenkins</em>, <em>Bash</em>, <em>Helm</em>, <em>Kubernetes</em>, and <em>Nginx</em> for Building and Deployment (CI/CD).</p>
+              <div class="project-links no-print">
+                <a class="btn project-links" href="https://nabi.hikaru.app" target="_blank">Check it Out!</a>
+                <a class="btn project-links" href="https://github.com/Nabi-Project/Nabi-Project" target="_blank">See on GitHub</a>
+              </div>   
+            </article>
+          </section>
+          <section class="project-item">
+            <img src="/images/project-kuroshiro-browser-500px.jpg" srcset="/images/project-kuroshiro-browser-1000px.jpg 2x" alt="Kuroshiro-Browser WebApp Screenshot" width="500" height="221">
+            <article class="project-contents">
+              <h3>Kuroshiro-Browser</h3>
+              <p>
+                A Simple Furigana Insertion WebApp and Library Conversion of a few abandoned Node Libraries for integration into browser based projects.
+              </p>
+              <div class="project-links no-print">
+                <a class="btn project-links" href="/demos/kuroshiro-browser" target="_blank">Check it Out!</a>
+                <a class="btn project-links" href="https://github.com/Shuruni/kuroshiro-browser" target="_blank">See on GitHub</a>
+              </div>
+            </article>
           </section>
           <section class="project-item">
             <img src="/images/project-yggfinance-500px.jpg" srcset="/images/project-yggfinance-1000px.jpg 2x" alt="Yggfinance UI Design and Architecture Powerpoint Screenshots" width="500" height="281">
-            <h3>YggFinance</h3>
-            <p>YggFinance is a personal finance focused <em>WebApp</em> providing a handful of tools to aid users in various areas of personal finance. Developed Full Stack on a senior project team using <em>React</em> w/ <em>MaterialUI</em> for the Frontend, <em>Node</em> for the Backend, and <em>GitHub</em>, <em>Docker</em>, <em>Bash</em>, and <em>Nginx</em> for Building and Deployment.
-            </p>
-            <!-- link to project -->
-            <!-- <a href="/nabi-project" target="_blank">Check it Out!</a> -->
-            <a class="btn" href="https://github.com/Shuruni/YggFinance" target="_blank">See on GitHub</a>
+            <article class="project-contents">
+              <h3>YggFinance</h3>
+              <p>A personal finance focused <em>WebApp</em> Developed as a Senior project. Uses <em>React</em> w/ <em>MaterialUI</em> for the Frontend, <em>Node</em> for the Backend, and <em>Docker</em>, <em>Bash</em>, and <em>Nginx</em> in Deployment.
+              </p>
+              <div class="project-links no-print">
+                <a class="btn project-links" href="https://github.com/Shuruni/YggFinance" target="_blank">See on GitHub</a>
+              </div>
+            </article>
           </section>
         </div>
-        <!-- End content edits here. -->
       </section>
 
       <!-- //  WORK EXPERIENCE  // -->
       <section class="resume-section">
-        <!-- Start content edits below this line.  -->
         <h2>Work Experience</h2>
 
-        <!-- To add more items, copy this whole <section></section> block -->
         <section class="work-item">
           <div class="work-details">
-            <h3>Trainee -> IT Consultant</h3>
+            <h3>IT Consultant</h3>
             <p>FDMGroup</p>
             <p>May, 2022 - Present</p>
           </div>
@@ -92,7 +104,7 @@
             </p>
             <ul>
               <li>Responsible for Supporting All Supply Chain Financing Applications as part of the Trade Financing And Lending Support Team in the Corporate Banking Sector of Deutsche Bank</li>
-              <li>Regularly resolved incidents that could cause multi-million dollar material and reputational impacts if left unresolved.</li>
+              <li>Regularly resolve incidents that could cause multi-million dollar material and reputational impacts if left unresolved.</li>
             </ul>
           </div>
         </section>
@@ -110,16 +122,12 @@
             </ul>
           </div>
         </section>
-
-        <!-- End content edits here. -->
       </section>
 
       <!-- //  EDUCATION & CERTIFICATIONS  // -->
       <section class="resume-section">
-        <!-- Start content edits below this line.  -->
         <h2>Education</h2>
 
-        <!-- To add more items, copy this whole <section></section> block -->
         <section class="education-item">
           <h3>Austin Peay State University - Clarksville TN</h3>
           <p>Jan, 2019 - May, 2021</p>
@@ -135,16 +143,12 @@
           <p>Learned <em>Java</em>, <em>C</em>, <em>C++</em>, <em>Linux</em>, <em>Testing</em>, <em>Databases</em>, <em>Requirements Engineering</em>, etc.; Member of Upsilon Pi Epsilon</p>
         </section>
 
-        <!-- End content edits here. -->
       </section>
     </main>
 
     <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
     <footer>
-      <!-- Start content edits below this line. -->
-      <p>© 2023 by Alan Holman | <span class="e-mail" data-user="nala" data-website="ved.inuruhs"></span></p>
-
-      <!-- Add or remove any networks. -->
+      <p>© 2024 by Alan Holman | <span class="e-mail" data-user="nala" data-website="ved.inuruhs"></span></p>
       <ul class="socials">
         <li>
           <a href="https://www.linkedin.com/in/alan-holman" target="_blank"><img src="/images/icon-logo-linkedin.png" alt="My LinkedIn Profile" height="64" width="64"></a>
@@ -156,7 +160,6 @@
           </picture></a>
         </li>
       </ul>
-      <!-- End content edits here. -->
     </footer>
   </body>
 </html>
